@@ -1,0 +1,82 @@
+Loaded your LOCAL configuration at [/app/pythonpath/superset_config.py]
+Loaded your LOCAL configuration at [/app/pythonpath/superset_config.py]
+2026-10-17 18:05:41,043:WARNING:py.warnings:/app/.venv/lib/python3.10/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+2026-10-17 18:05:41,043:WARNING:py.warnings:/app/.venv/lib/python3.10/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+2026-10-17 18:05:41,276:INFO:alembic.runtime.migration:Context impl PostgresqlImpl.
+2026-10-17 18:05:41,276:INFO:alembic.runtime.migration:Will assume transactional DDL.
+2026-10-17 18:05:41,278:INFO:alembic.runtime.migration:Context impl PostgresqlImpl.
+2026-10-17 18:05:41,278:INFO:alembic.runtime.migration:Will assume transactional DDL.
+2026-10-17 18:05:41,373:INFO:superset.app:Syncing configuration to database...
+2026-10-17 18:05:41,373:INFO:superset.app:Syncing configuration to database...
+2026-10-17 18:05:41,377:INFO:superset.app:Configuration sync to database completed successfully
+2026-10-17 18:05:41,377:INFO:superset.app:Configuration sync to database completed successfully
+2026-10-17 18:05:42,254:INFO:superset.core.mcp.core_mcp_injection:MCP dependency injection initialized successfully
+2026-10-17 18:05:42,255:INFO:superset.core.mcp.core_mcp_injection:MCP dependency injection initialized successfully
+2026-10-17 18:05:42,256:INFO:superset.mcp_service.app:Created FastMCP instance: MCP Server
+2026-10-17 18:05:42,256:INFO:superset.core.mcp.core_mcp_injection:MCP dependency injection initialized successfully
+2026-10-17 18:05:42,256:INFO:superset.core.mcp.core_mcp_injection:MCP service app imported - host tools registered
+2026-10-17 18:05:42,256:INFO:superset.mcp_service.app:Created FastMCP instance: MCP Server
+2026-10-17 18:05:42,256:INFO:superset.core.mcp.core_mcp_injection:MCP dependency injection initialized successfully
+2026-10-17 18:05:42,256:INFO:superset.core.mcp.core_mcp_injection:MCP service app imported - host tools registered
+2026-10-17 18:05:42,257:INFO:superset.core.mcp.core_mcp_injection:Registered MCP prompt: create_chart_guided (protected, host)
+2026-10-17 18:05:42,257:INFO:superset.core.mcp.core_mcp_injection:Registered MCP prompt: create_chart_guided (protected, host)
+2026-10-17 18:05:42,375:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: generate_chart (protected, host)
+2026-10-17 18:05:42,376:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: generate_chart (protected, host)
+2026-10-17 18:05:42,381:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_data (protected, host)
+2026-10-17 18:05:42,381:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_data (protected, host)
+2026-10-17 18:05:42,383:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_info (protected, host)
+2026-10-17 18:05:42,383:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_info (protected, host)
+2026-10-17 18:05:42,389:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_preview (protected, host)
+2026-10-17 18:05:42,389:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_preview (protected, host)
+2026-10-17 18:05:42,390:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_type_schema (protected, host)
+2026-10-17 18:05:42,390:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_type_schema (protected, host)
+2026-10-17 18:05:42,392:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_charts (protected, host)
+2026-10-17 18:05:42,392:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_charts (protected, host)
+2026-10-17 18:05:42,396:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: update_chart (protected, host)
+2026-10-17 18:05:42,396:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: update_chart (protected, host)
+2026-10-17 18:05:42,397:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: update_chart_preview (protected, host)
+2026-10-17 18:05:42,397:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: update_chart_preview (protected, host)
+2026-10-17 18:05:42,407:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: add_chart_to_existing_dashboard (protected, host)
+2026-10-17 18:05:42,408:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: add_chart_to_existing_dashboard (protected, host)
+2026-10-17 18:05:42,408:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: generate_dashboard (protected, host)
+2026-10-17 18:05:42,409:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: generate_dashboard (protected, host)
+2026-10-17 18:05:42,410:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_dashboard_info (protected, host)
+2026-10-17 18:05:42,410:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_dashboard_info (protected, host)
+2026-10-17 18:05:42,412:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_dashboards (protected, host)
+2026-10-17 18:05:42,412:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_dashboards (protected, host)
+2026-10-17 18:05:42,419:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_database_info (protected, host)
+2026-10-17 18:05:42,419:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_database_info (protected, host)
+2026-10-17 18:05:42,421:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_databases (protected, host)
+2026-10-17 18:05:42,421:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_databases (protected, host)
+2026-10-17 18:05:42,430:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: create_virtual_dataset (protected, host)
+2026-10-17 18:05:42,430:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: create_virtual_dataset (protected, host)
+2026-10-17 18:05:42,432:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_dataset_info (protected, host)
+2026-10-17 18:05:42,432:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_dataset_info (protected, host)
+2026-10-17 18:05:42,434:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_datasets (protected, host)
+2026-10-17 18:05:42,434:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_datasets (protected, host)
+2026-10-17 18:05:42,435:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: generate_explore_link (protected, host)
+2026-10-17 18:05:42,435:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: generate_explore_link (protected, host)
+2026-10-17 18:05:42,442:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: execute_sql (protected, host)
+2026-10-17 18:05:42,442:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: execute_sql (protected, host)
+2026-10-17 18:05:42,442:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: open_sql_lab_with_context (protected, host)
+2026-10-17 18:05:42,443:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: open_sql_lab_with_context (protected, host)
+2026-10-17 18:05:42,443:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: save_sql_query (protected, host)
+2026-10-17 18:05:42,444:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: save_sql_query (protected, host)
+2026-10-17 18:05:42,444:INFO:superset.core.mcp.core_mcp_injection:Registered MCP prompt: quickstart (protected, host)
+2026-10-17 18:05:42,444:INFO:superset.core.mcp.core_mcp_injection:Registered MCP prompt: quickstart (protected, host)
+2026-10-17 18:05:42,447:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_instance_info (protected, host)
+2026-10-17 18:05:42,447:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_instance_info (protected, host)
+2026-10-17 18:05:42,449:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_schema (protected, host)
+2026-10-17 18:05:42,450:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_schema (protected, host)
+2026-10-17 18:05:42,450:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: health_check (protected, host)
+2026-10-17 18:05:42,450:INFO:superset.core.mcp.core_mcp_injection:MCP service app imported - host tools registered
+2026-10-17 18:05:42,450:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: health_check (protected, host)
+2026-10-17 18:05:42,450:INFO:superset.core.mcp.core_mcp_injection:MCP service app imported - host tools registered
+10.244.0.1 - - [17/Oct/2026:18:05:58 +0000] "GET /health HTTP/1.1" 200 2 "-" "kube-probe/1.37"
+10.244.0.1 - - [17/Oct/2026:18:05:58 +0000] "GET /health HTTP/1.1" 200 2 "-" "kube-probe/1.37"
+2026-10-17 18:06:04,388:WARNING:superset.views.base:Could not load default spinner SVG: [Errno 2] No such file or directory: '/app/superset/views/../../superset-frontend/packages/superset-ui-core/src/components/assets/images/loading.svg'
+127.0.0.1 - - [17/Oct/2026:18:06:04 +0000] "GET /login/ HTTP/1.1" 200 15013 "-" "curl/7.88.1"

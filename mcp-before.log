@@ -1,0 +1,81 @@
+Loaded your LOCAL configuration at [/app/pythonpath/superset_config.py]
+2026-10-17 19:21:15,242:WARNING:py.warnings:/app/.venv/lib/python3.10/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+2026-10-17 19:21:15,508:INFO:alembic.runtime.migration:Context impl PostgresqlImpl.
+2026-10-17 19:21:15,508:INFO:alembic.runtime.migration:Will assume transactional DDL.
+2026-10-17 19:21:15,689:INFO:superset.app:Syncing configuration to database...
+2026-10-17 19:21:15,692:INFO:superset.app:Configuration sync to database completed successfully
+2026-10-17 19:21:16,452:INFO:superset.core.mcp.core_mcp_injection:MCP dependency injection initialized successfully
+2026-10-17 19:21:16,454:INFO:superset.mcp_service.app:Created FastMCP instance: MCP Server
+2026-10-17 19:21:16,454:INFO:superset.core.mcp.core_mcp_injection:MCP dependency injection initialized successfully
+2026-10-17 19:21:16,454:INFO:superset.core.mcp.core_mcp_injection:MCP service app imported - host tools registered
+2026-10-17 19:21:16,455:INFO:superset.core.mcp.core_mcp_injection:Registered MCP prompt: create_chart_guided (protected, host)
+2026-10-17 19:21:16,564:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: generate_chart (protected, host)
+2026-10-17 19:21:16,572:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_data (protected, host)
+2026-10-17 19:21:16,575:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_info (protected, host)
+2026-10-17 19:21:16,586:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_preview (protected, host)
+2026-10-17 19:21:16,587:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_type_schema (protected, host)
+2026-10-17 19:21:16,590:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_charts (protected, host)
+2026-10-17 19:21:16,595:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: update_chart (protected, host)
+2026-10-17 19:21:16,596:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: update_chart_preview (protected, host)
+2026-10-17 19:21:16,606:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: add_chart_to_existing_dashboard (protected, host)
+2026-10-17 19:21:16,608:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: generate_dashboard (protected, host)
+2026-10-17 19:21:16,610:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_dashboard_info (protected, host)
+2026-10-17 19:21:16,612:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_dashboards (protected, host)
+2026-10-17 19:21:16,621:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_database_info (protected, host)
+2026-10-17 19:21:16,623:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_databases (protected, host)
+2026-10-17 19:21:16,633:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: create_virtual_dataset (protected, host)
+2026-10-17 19:21:16,635:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_dataset_info (protected, host)
+2026-10-17 19:21:16,637:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_datasets (protected, host)
+2026-10-17 19:21:16,638:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: generate_explore_link (protected, host)
+2026-10-17 19:21:16,645:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: execute_sql (protected, host)
+2026-10-17 19:21:16,646:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: open_sql_lab_with_context (protected, host)
+2026-10-17 19:21:16,647:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: save_sql_query (protected, host)
+2026-10-17 19:21:16,648:INFO:superset.core.mcp.core_mcp_injection:Registered MCP prompt: quickstart (protected, host)
+2026-10-17 19:21:16,652:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_instance_info (protected, host)
+2026-10-17 19:21:16,655:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_schema (protected, host)
+2026-10-17 19:21:16,656:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: health_check (protected, host)
+2026-10-17 19:21:16,656:INFO:superset.core.mcp.core_mcp_injection:MCP service app imported - host tools registered
+2026-10-17 19:21:16,661:INFO:root:Creating MCP app with default configuration...
+2026-10-17 19:21:16,661:INFO:superset.mcp_service.flask_singleton:Creating Flask app instance for MCP service
+2026-10-17 19:21:16,661:INFO:superset.mcp_service.flask_singleton:Reusing existing Flask app from app context for MCP service
+2026-10-17 19:21:16,661:INFO:superset.mcp_service.middleware:Created ResponseSizeGuardMiddleware with token_limit=25000
+2026-10-17 19:21:16,661:INFO:superset.mcp_service.app:Added 4 middleware(s) to MCP instance
+2026-10-17 19:21:16,661:INFO:superset.mcp_service.app:Configured FastMCP instance: Superset MCP Server (auth=False)
+2026-10-17 19:21:16,663:INFO:superset.mcp_service.server:Tool search transform enabled (strategy=bm25, max_results=5, pinned=['health_check', 'get_instance_info'])
+2026-10-17 19:21:16,663:INFO:root:EventStore: Using in-memory storage (single-pod mode)
+2026-10-17 19:21:16,663:INFO:root:Starting FastMCP on 0.0.0.0:8088
+2026-10-17 19:21:16,663:INFO:root:Running in single-pod mode with in-memory sessions
+2026-10-17 19:21:16,780:INFO:httpx:HTTP Request: GET https://pypi.org/pypi/fastmcp/json "HTTP/1.1 200 OK"
+
+
+╭──────────────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│                                                                              │
+│                         ▄▀▀ ▄▀█ █▀▀ ▀█▀ █▀▄▀█ █▀▀ █▀█                        │
+│                         █▀  █▀█ ▄▄█  █  █ ▀ █ █▄▄ █▀▀                        │
+│                                                                              │
+│                                                                              │
+│                                FastMCP 3.1.0                                 │
+│                            https://gofastmcp.com                             │
+│                                                                              │
+│                  🖥  Server:      Superset MCP Server, 3.1.0                  │
+│                  🚀 Deploy free: https://fastmcp.cloud                       │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────╮
+│                          🎉 Update available: 4.1.0                          │
+│                      Run: pip install --upgrade fastmcp                      │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+[10/17/26 19:21:16] INFO     Starting MCP server 'Superset MCP  transport.py:273
+                             Server' with transport                             
+                             'streamable-http' (stateless) on                   
+                             http://0.0.0.0:8088/mcp                            
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+2026-10-17 19:21:16,810:INFO:mcp.server.streamable_http_manager:StreamableHTTP session manager started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8088 (Press CTRL+C to quit)

@@ -1,0 +1,75 @@
+Resolved 19 packages in 198ms
+Prepared 3 packages in 39ms
+Installed 3 packages in 9ms
+ + flower==2.2.0
+ + prometheus-client==0.26.0
+ + tornado==6.5.10
+Loaded your LOCAL configuration at [/app/pythonpath/superset_config.py]
+2026-10-17 19:21:15,886:WARNING:py.warnings:/app/.venv/lib/python3.10/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+2026-10-17 19:21:16,089:INFO:alembic.runtime.migration:Context impl PostgresqlImpl.
+2026-10-17 19:21:16,089:INFO:alembic.runtime.migration:Will assume transactional DDL.
+2026-10-17 19:21:16,222:INFO:superset.app:Syncing configuration to database...
+2026-10-17 19:21:16,225:INFO:superset.app:Configuration sync to database completed successfully
+2026-10-17 19:21:17,083:INFO:superset.core.mcp.core_mcp_injection:MCP dependency injection initialized successfully
+2026-10-17 19:21:17,084:INFO:superset.mcp_service.app:Created FastMCP instance: MCP Server
+2026-10-17 19:21:17,084:INFO:superset.core.mcp.core_mcp_injection:MCP dependency injection initialized successfully
+2026-10-17 19:21:17,084:INFO:superset.core.mcp.core_mcp_injection:MCP service app imported - host tools registered
+2026-10-17 19:21:17,085:INFO:superset.core.mcp.core_mcp_injection:Registered MCP prompt: create_chart_guided (protected, host)
+2026-10-17 19:21:17,126:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: generate_chart (protected, host)
+2026-10-17 19:21:17,130:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_data (protected, host)
+2026-10-17 19:21:17,132:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_info (protected, host)
+2026-10-17 19:21:17,138:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_preview (protected, host)
+2026-10-17 19:21:17,139:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_type_schema (protected, host)
+2026-10-17 19:21:17,141:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_charts (protected, host)
+2026-10-17 19:21:17,145:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: update_chart (protected, host)
+2026-10-17 19:21:17,146:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: update_chart_preview (protected, host)
+2026-10-17 19:21:17,155:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: add_chart_to_existing_dashboard (protected, host)
+2026-10-17 19:21:17,156:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: generate_dashboard (protected, host)
+2026-10-17 19:21:17,157:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_dashboard_info (protected, host)
+2026-10-17 19:21:17,159:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_dashboards (protected, host)
+2026-10-17 19:21:17,166:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_database_info (protected, host)
+2026-10-17 19:21:17,168:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_databases (protected, host)
+2026-10-17 19:21:17,176:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: create_virtual_dataset (protected, host)
+2026-10-17 19:21:17,178:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_dataset_info (protected, host)
+2026-10-17 19:21:17,179:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_datasets (protected, host)
+2026-10-17 19:21:17,180:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: generate_explore_link (protected, host)
+2026-10-17 19:21:17,187:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: execute_sql (protected, host)
+2026-10-17 19:21:17,188:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: open_sql_lab_with_context (protected, host)
+2026-10-17 19:21:17,188:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: save_sql_query (protected, host)
+2026-10-17 19:21:17,189:INFO:superset.core.mcp.core_mcp_injection:Registered MCP prompt: quickstart (protected, host)
+2026-10-17 19:21:17,191:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_instance_info (protected, host)
+2026-10-17 19:21:17,194:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_schema (protected, host)
+2026-10-17 19:21:17,195:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: health_check (protected, host)
+2026-10-17 19:21:17,195:INFO:superset.core.mcp.core_mcp_injection:MCP service app imported - host tools registered
+2026-10-17 19:21:17,206:INFO:flower.command:Visit me at http://127.0.0.1:5555//flower/
+2026-10-17 19:21:17,215:INFO:flower.command:Broker: redis://:**@valkey:6379/0
+2026-10-17 19:21:17,217:INFO:flower.command:Registered tasks: 
+['cache-warmup',
+ 'cache_chart_thumbnail',
+ 'cache_dashboard_screenshot',
+ 'cache_dashboard_thumbnail',
+ 'celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'fetch_url',
+ 'prune_logs',
+ 'prune_query',
+ 'prune_tasks',
+ 'reports.execute',
+ 'reports.prune_log',
+ 'reports.scheduler',
+ 'sql_lab.get_sql_results',
+ 'sync_database_permissions',
+ 'tasks.execute']
+2026-10-17 19:21:17,221:INFO:kombu.mixins:Connected to redis://:**@valkey:6379/0
+2026-10-17 19:21:17,234:WARNING:py.warnings:/app/.venv/lib/python3.10/site-packages/kombu/transport/redis.py:514: DeprecationWarning: Call to 'get_connection' function with deprecated usage of input argument/s '['command_name']'. (Use get_connection() without args instead) -- Deprecated since version 5.3.0.
+  client.connection = client.connection_pool.get_connection('_')
+

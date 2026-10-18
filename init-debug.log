@@ -1,0 +1,58 @@
+Loaded your LOCAL configuration at [/app/pythonpath/superset_config.py]
+2026-10-17 18:06:28,211:DEBUG:superset.utils.logging_configurator:logging was configured successfully
+2026-10-17 18:06:28,225:DEBUG:root:Configured event logger of type <class 'superset.utils.log.DBEventLogger'>
+2026-10-17 18:06:28,229:DEBUG:superset.initialization:Setting database isolation level to READ COMMITTED
+2026-10-17 18:06:28,230:WARNING:py.warnings:/app/.venv/lib/python3.10/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+2026-10-17 18:06:28,477:INFO:alembic.runtime.migration:Context impl PostgresqlImpl.
+2026-10-17 18:06:28,477:INFO:alembic.runtime.migration:Will assume transactional DDL.
+2026-10-17 18:06:28,641:INFO:superset.app:Syncing configuration to database...
+2026-10-17 18:06:28,646:DEBUG:superset.commands.theme.seed:Updated system theme: THEME_DEFAULT
+2026-10-17 18:06:28,650:DEBUG:superset.commands.theme.seed:Updated system theme: THEME_DARK
+2026-10-17 18:06:28,650:INFO:superset.app:Configuration sync to database completed successfully
+2026-10-17 18:06:29,382:INFO:superset.core.mcp.core_mcp_injection:MCP dependency injection initialized successfully
+2026-10-17 18:06:29,383:DEBUG:mcp.server.lowlevel.server:Initializing server 'MCP Server'
+2026-10-17 18:06:29,383:DEBUG:mcp.server.lowlevel.server:Registering handler for ListToolsRequest
+2026-10-17 18:06:29,384:DEBUG:mcp.server.lowlevel.server:Registering handler for ListResourcesRequest
+2026-10-17 18:06:29,384:DEBUG:mcp.server.lowlevel.server:Registering handler for PromptListRequest
+2026-10-17 18:06:29,384:DEBUG:mcp.server.lowlevel.server:Registering handler for CallToolRequest
+2026-10-17 18:06:29,384:INFO:superset.mcp_service.app:Created FastMCP instance: MCP Server
+2026-10-17 18:06:29,384:INFO:superset.core.mcp.core_mcp_injection:MCP dependency injection initialized successfully
+2026-10-17 18:06:29,384:INFO:superset.core.mcp.core_mcp_injection:MCP service app imported - host tools registered
+2026-10-17 18:06:29,386:INFO:superset.core.mcp.core_mcp_injection:Registered MCP prompt: create_chart_guided (protected, host)
+2026-10-17 18:06:29,489:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: generate_chart (protected, host)
+2026-10-17 18:06:29,496:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_data (protected, host)
+2026-10-17 18:06:29,499:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_info (protected, host)
+2026-10-17 18:06:29,510:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_preview (protected, host)
+2026-10-17 18:06:29,511:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_chart_type_schema (protected, host)
+2026-10-17 18:06:29,513:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_charts (protected, host)
+2026-10-17 18:06:29,518:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: update_chart (protected, host)
+2026-10-17 18:06:29,519:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: update_chart_preview (protected, host)
+2026-10-17 18:06:29,530:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: add_chart_to_existing_dashboard (protected, host)
+2026-10-17 18:06:29,531:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: generate_dashboard (protected, host)
+2026-10-17 18:06:29,533:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_dashboard_info (protected, host)
+2026-10-17 18:06:29,536:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_dashboards (protected, host)
+2026-10-17 18:06:29,543:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_database_info (protected, host)
+2026-10-17 18:06:29,546:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_databases (protected, host)
+2026-10-17 18:06:29,556:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: create_virtual_dataset (protected, host)
+2026-10-17 18:06:29,558:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_dataset_info (protected, host)
+2026-10-17 18:06:29,560:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: list_datasets (protected, host)
+2026-10-17 18:06:29,561:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: generate_explore_link (protected, host)
+2026-10-17 18:06:29,568:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: execute_sql (protected, host)
+2026-10-17 18:06:29,569:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: open_sql_lab_with_context (protected, host)
+2026-10-17 18:06:29,570:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: save_sql_query (protected, host)
+2026-10-17 18:06:29,571:INFO:superset.core.mcp.core_mcp_injection:Registered MCP prompt: quickstart (protected, host)
+2026-10-17 18:06:29,575:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_instance_info (protected, host)
+2026-10-17 18:06:29,578:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: get_schema (protected, host)
+2026-10-17 18:06:29,579:INFO:superset.core.mcp.core_mcp_injection:Registered MCP tool: health_check (protected, host)
+2026-10-17 18:06:29,579:INFO:superset.core.mcp.core_mcp_injection:MCP service app imported - host tools registered
+2026-10-17 18:06:30,017:INFO:superset.security.manager:Syncing role definition
+2026-10-17 18:06:30,027:INFO:superset.security.manager:Syncing Admin perms
+2026-10-17 18:06:30,028:INFO:superset.security.manager:Syncing Alpha perms
+2026-10-17 18:06:30,031:INFO:superset.security.manager:Syncing Gamma perms
+2026-10-17 18:06:30,032:INFO:superset.security.manager:Syncing sql_lab perms
+2026-10-17 18:06:30,034:INFO:superset.security.manager:Fetching a set of all perms to lookup which ones are missing
+2026-10-17 18:06:30,035:INFO:superset.security.manager:Creating missing datasource permissions.
+2026-10-17 18:06:30,037:INFO:superset.security.manager:Creating missing database permissions.
+2026-10-17 18:06:30,040:INFO:superset.security.manager:Cleaning faulty perms

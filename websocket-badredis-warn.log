@@ -1,0 +1,10 @@
+{"level":"error","message":"Redis connection error: getaddrinfo ENOTFOUND no-such-redis","timestamp":"2026-10-17T19:26:29.354Z"}
+{"level":"error","message":"Redis connection error: getaddrinfo ENOTFOUND no-such-redis","timestamp":"2026-10-17T19:26:29.530Z"}
+{"level":"error","message":"Redis connection error: getaddrinfo ENOTFOUND no-such-redis","timestamp":"2026-10-17T19:26:29.748Z"}
+{"level":"error","message":"Redis connection error: getaddrinfo ENOTFOUND no-such-redis","timestamp":"2026-10-17T19:26:30.016Z"}
+{"level":"error","message":"Redis connection error: getaddrinfo ENOTFOUND no-such-redis","timestamp":"2026-10-17T19:26:30.621Z"}
+{"level":"error","message":"Redis connection error: getaddrinfo ENOTFOUND no-such-redis","timestamp":"2026-10-17T19:26:31.611Z"}
+{"level":"error","message":"Redis connection error: getaddrinfo ENOTFOUND no-such-redis","timestamp":"2026-10-17T19:26:33.305Z"}
+{"level":"error","message":"Redis connection error: getaddrinfo ENOTFOUND no-such-redis","timestamp":"2026-10-17T19:26:36.665Z"}
+{"level":"error","message":"Redis connection error: getaddrinfo ENOTFOUND no-such-redis","timestamp":"2026-10-17T19:26:41.790Z"}
+{"level":"error","message":"Redis connection error: getaddrinfo ENOTFOUND no-such-redis","timestamp":"2026-10-17T19:26:46.983Z"}

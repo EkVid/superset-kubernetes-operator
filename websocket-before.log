@@ -1,0 +1,2 @@
+{"level":"info","message":"Redis subscriber healthy; realtime transport available","timestamp":"2026-10-17T19:23:12.839Z"}
+{"level":"info","message":"Subscribed to Redis channel: realtime","timestamp":"2026-10-17T19:23:12.846Z"}

@@ -1,0 +1,17 @@
+[2026-10-17 15:23:43 +0000] [11] [INFO] Starting gunicorn 23.0.0
+[2026-10-17 15:23:43 +0000] [11] [INFO] Listening at: http://0.0.0.0:8088 (11)
+[2026-10-17 15:23:43 +0000] [11] [INFO] Using worker: gthread
+[2026-10-17 15:23:43 +0000] [12] [INFO] Booting worker with pid: 12
+[2026-10-17 15:23:43 +0000] [13] [INFO] Booting worker with pid: 13
+Loaded your LOCAL configuration at [/app/pythonpath/superset_config.py]
+Loaded your LOCAL configuration at [/app/pythonpath/superset_config.py]
+2026-10-17 15:23:45,240:WARNING:py.warnings:/app/.venv/lib/python3.10/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+2026-10-17 15:23:45,240:WARNING:py.warnings:/app/.venv/lib/python3.10/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+10.244.0.1 - - [17/Oct/2026:15:24:03 +0000] "GET /health HTTP/1.1" 200 2 "-" "kube-probe/1.37"
+10.244.0.1 - - [17/Oct/2026:15:24:03 +0000] "GET /health HTTP/1.1" 200 2 "-" "kube-probe/1.37"
+2026-10-17 15:24:08,167:WARNING:superset.views.base:Could not load default spinner SVG: [Errno 2] No such file or directory: '/app/superset/views/../../superset-frontend/packages/superset-ui-core/src/components/assets/images/loading.svg'
+127.0.0.1 - - [17/Oct/2026:15:24:08 +0000] "GET /login/ HTTP/1.1" 200 15013 "-" "curl/7.88.1"

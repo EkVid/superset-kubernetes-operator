@@ -1,0 +1,40 @@
+Resolved 19 packages in 197ms
+Prepared 3 packages in 39ms
+Installed 3 packages in 9ms
+ + flower==2.2.0
+ + prometheus-client==0.26.0
+ + tornado==6.5.10
+Loaded your LOCAL configuration at [/app/pythonpath/superset_config.py]
+2026-10-17 19:24:18,544:WARNING:py.warnings:/app/.venv/lib/python3.10/site-packages/flask_limiter/extension.py:324: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+
+2026-10-17 19:24:19,857:INFO:flower.command:Visit me at http://127.0.0.1:5555//flower/
+2026-10-17 19:24:19,867:INFO:flower.command:Broker: redis://:**@valkey:6379/0
+2026-10-17 19:24:19,868:INFO:flower.command:Registered tasks: 
+['cache-warmup',
+ 'cache_chart_thumbnail',
+ 'cache_dashboard_screenshot',
+ 'cache_dashboard_thumbnail',
+ 'celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'fetch_url',
+ 'prune_logs',
+ 'prune_query',
+ 'prune_tasks',
+ 'reports.execute',
+ 'reports.prune_log',
+ 'reports.scheduler',
+ 'sql_lab.get_sql_results',
+ 'sync_database_permissions',
+ 'tasks.execute']
+2026-10-17 19:24:19,872:INFO:kombu.mixins:Connected to redis://:**@valkey:6379/0
+2026-10-17 19:24:19,886:WARNING:py.warnings:/app/.venv/lib/python3.10/site-packages/kombu/transport/redis.py:514: DeprecationWarning: Call to 'get_connection' function with deprecated usage of input argument/s '['command_name']'. (Use get_connection() without args instead) -- Deprecated since version 5.3.0.
+  client.connection = client.connection_pool.get_connection('_')
+
