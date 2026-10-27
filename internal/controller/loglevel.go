@@ -16,15 +16,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-// SAME THING AS THE OTHER LOG LEVEL FILE, REMOVE THE COMMENTS BELOW WHEN CLEANING UP.
-
-// This file takes the log level the operator has chosen for each component and
-// makes sure that component actually logs at that level. It should do:
-// Deliver the level to each component's logging
-
-// Reason why it's added: Superset's LOG_LEVEL isn't enough on its own.
-// Celery resets its logger when started, and Gunicorn never reads Superset's config.
-
 package controller
 
 import (
@@ -36,7 +27,7 @@ import (
 	"github.com/apache/superset-kubernetes-operator/internal/resolution"
 )
 
-// resolves the level shared by all lifecycle tasks.
+// lifecycleLogLevel resolves the level shared by all lifecycle tasks.
 func lifecycleLogLevel(spec *supersetv1alpha1.SupersetSpec) string {
 	var lifecycle *supersetv1alpha1.LogLevel
 	if spec.Lifecycle != nil {
@@ -45,7 +36,8 @@ func lifecycleLogLevel(spec *supersetv1alpha1.SupersetSpec) string {
 	return supersetconfig.ResolveLogLevel(lifecycle, spec.LogLevel)
 }
 
-// injects the env vars that carry a component's resolved level to loggers that don't read Superset's LOG_LEVEL.
+// appendLogLevelEnv injects the env vars that carry a component's resolved
+// level to loggers that don't read Superset's LOG_LEVEL.
 func appendLogLevelEnv(componentType naming.ComponentType, level string, injected *resolution.OperatorInjected) {
 	if componentType == naming.ComponentWebServer {
 		// Separate from the Gunicorn tuning presets, so injected even with preset disabled.
@@ -53,8 +45,9 @@ func appendLogLevelEnv(componentType naming.ComponentType, level string, injecte
 	}
 }
 
-// adds --loglevel to the fixed default commands of the Celery worker (when preset is disabled) and Celery Beat.
-// A user set command replaces the default and must pass --loglevel itself.
+// withCeleryDefaultLogLevel adds --loglevel to the fixed default commands of
+// the Celery worker (used with preset disabled) and Celery Beat. A user-set
+// command replaces the default entirely and must pass --loglevel itself.
 func withCeleryDefaultLogLevel(componentType naming.ComponentType, command []string, level string) []string {
 	if componentType != naming.ComponentCeleryWorker && componentType != naming.ComponentCeleryBeat {
 		return command

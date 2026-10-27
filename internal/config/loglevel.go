@@ -17,16 +17,6 @@ specific language governing permissions and limitations
 under the License.
 */
 
-// REMOVE THE COMMENTS BELOW DURING CLEANUP. JUST FOR UNDERSTANDING PURPOSES.
-
-// This file works out a component's log level and converts it into the format
-// that each program in that component understands.
-// No k8s call happens in here.
-
-// CRD accepts one set of lowercase levels (debug, info, warning, etc).
-// But Superset, Gunicorn and Celery each expect the level in a different form,
-// so this file converts the CRD level into the form each program expects.
-
 package config
 
 import (
@@ -36,11 +26,11 @@ import (
 	v1alpha1 "github.com/apache/superset-kubernetes-operator/api/v1alpha1"
 )
 
-// applies when neither the component nor spec.logLevel sets a level.
+// DefaultLogLevel applies when neither the component nor spec.logLevel sets a level.
 const DefaultLogLevel = "info"
 
-// returns the effective lowercase level: the component value,
-// then the top level value, then DefaultLogLevel.
+// ResolveLogLevel returns the effective lowercase level: the component value,
+// then the top-level value, then DefaultLogLevel.
 func ResolveLogLevel(component, topLevel *v1alpha1.LogLevel) string {
 	if component != nil {
 		return string(*component)
@@ -51,12 +41,12 @@ func ResolveLogLevel(component, topLevel *v1alpha1.LogLevel) string {
 	return DefaultLogLevel
 }
 
-// returns the level name Python's logging module expects.
+// PythonLogLevel returns the level name Python's logging module expects.
 func PythonLogLevel(level string) string {
 	return strings.ToUpper(level)
 }
 
-// returns the Celery worker/beat --loglevel argument.
+// CeleryLogLevelFlag returns the Celery worker/beat --loglevel argument.
 func CeleryLogLevelFlag(level string) string {
 	return fmt.Sprintf("--loglevel=%s", level)
 }
