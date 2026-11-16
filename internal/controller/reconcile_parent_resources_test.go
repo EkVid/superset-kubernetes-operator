@@ -281,8 +281,8 @@ func TestReconcile_LogLevelWiringAndRestartScope(t *testing.T) {
 	assert.Equal(t, "debug", envValue(deployments["test-web-server"], supersetconfig.EnvGunicornLogLevel))
 	assert.Equal(t, "DEBUG", envValue(deployments["test-web-server"], common.EnvLogLevel))
 	assert.Equal(t, "WARNING", envValue(deployments["test-celery-worker"], common.EnvLogLevel))
-	assert.Equal(t, "WARNING", envValue(deployments["test-celery-flower"], supersetconfig.EnvCeleryFlowerLogLevel))
-	assert.Equal(t, "warn", envValue(deployments["test-websocket-server"], supersetconfig.EnvWebsocketLogLevel))
+	assert.Equal(t, "WARNING", envValue(deployments["test-celery-flower"], supersetconfig.CeleryFlowerLogLevelEnvVar))
+	assert.Equal(t, "warn", envValue(deployments["test-websocket-server"], supersetconfig.WebsocketLogLevelEnvVar))
 	assert.Contains(t, deployments["test-celery-worker"].Spec.Template.Spec.Containers[0].Command, "--loglevel=warning")
 	assert.Contains(t, deployments["test-celery-beat"].Spec.Template.Spec.Containers[0].Command, "--loglevel=warning")
 
@@ -377,7 +377,7 @@ func TestReconcile_WebsocketLogLevelRequiresExplicitSetting(t *testing.T) {
 		t.Fatalf("expected websocket Deployment: %v", err)
 	}
 	for _, env := range deploy.Spec.Template.Spec.Containers[0].Env {
-		if env.Name == supersetconfig.EnvWebsocketLogLevel {
+		if env.Name == supersetconfig.WebsocketLogLevelEnvVar {
 			t.Fatalf("did not expect websocket log-level environment variable when log level is not explicit")
 		}
 	}
@@ -427,7 +427,7 @@ func TestReconcile_CeleryFlowerLogLevelOverride(t *testing.T) {
 
 	assert.Equal(t, "ERROR", envValue(
 		deploy,
-		supersetconfig.EnvCeleryFlowerLogLevel,
+		supersetconfig.CeleryFlowerLogLevelEnvVar,
 	))
 }
 

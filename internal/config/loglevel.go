@@ -27,10 +27,11 @@ import (
 )
 
 // DefaultLogLevel applies when neither the component nor spec.logLevel sets a level.
+const DefaultLogLevel = v1alpha1.LogLevelInfo
+
 const (
-	DefaultLogLevel         = v1alpha1.LogLevelInfo
-	EnvWebsocketLogLevel    = "LOG_LEVEL"
-	EnvCeleryFlowerLogLevel = "FLOWER_LOGGING"
+	WebsocketLogLevelEnvVar    = "LOG_LEVEL"
+	CeleryFlowerLogLevelEnvVar = "FLOWER_LOGGING"
 )
 
 // ResolveLogLevel returns the effective lowercase level: the component value,

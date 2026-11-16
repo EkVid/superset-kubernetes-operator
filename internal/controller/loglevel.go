@@ -49,10 +49,10 @@ func appendLogLevelEnv(componentType naming.ComponentType, level supersetv1alpha
 	// the operator must only inject its level when the user sets one explicitly
 	case naming.ComponentWebsocketServer:
 		if isExplicit {
-			injected.Env = append(injected.Env, corev1.EnvVar{Name: supersetconfig.EnvWebsocketLogLevel, Value: supersetconfig.WinstonLogLevel(level)})
+			injected.Env = append(injected.Env, corev1.EnvVar{Name: supersetconfig.WebsocketLogLevelEnvVar, Value: supersetconfig.WinstonLogLevel(level)})
 		}
 	case naming.ComponentCeleryFlower:
-		injected.Env = append(injected.Env, corev1.EnvVar{Name: supersetconfig.EnvCeleryFlowerLogLevel, Value: supersetconfig.CeleryFlowerLogLevel(level)})
+		injected.Env = append(injected.Env, corev1.EnvVar{Name: supersetconfig.CeleryFlowerLogLevelEnvVar, Value: supersetconfig.CeleryFlowerLogLevel(level)})
 	}
 }
 
